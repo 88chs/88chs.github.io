@@ -4,6 +4,131 @@
   
     
     <entry>
+      <title>C++文章</title>
+      <link href="/2023/12/05/c/"/>
+      <url>/2023/12/05/c/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签2 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python文章</title>
+      <link href="/2023/12/05/python/"/>
+      <url>/2023/12/05/python/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java文章</title>
+      <link href="/2023/12/05/java/"/>
+      <url>/2023/12/05/java/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签1 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SpringBoot概述</title>
+      <link href="/2023/12/05/springboot/"/>
+      <url>/2023/12/05/springboot/</url>
+      
+        <content type="html"><![CDATA[<h3 id="SpringBoot概述"><a href="#SpringBoot概述" class="headerlink" title="SpringBoot概述"></a><strong>SpringBoot概述</strong></h3><h5 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h5><p>SpringBoot 提供了一种快速开发Spring项目的方式，而不是对Spring功能上增强。</p><p>Spring的缺点：</p><ul><li>配置繁琐</li><li>依赖繁琐</li></ul><p>SpringBoot功能：</p><ul><li>自动配置</li><li>起步依赖：依赖传递</li><li>辅助功能</li></ul><h3 id="SpringBoot快速入门"><a href="#SpringBoot快速入门" class="headerlink" title="SpringBoot快速入门"></a><strong>SpringBoot快速入门</strong></h3><h5 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h5><ul><li>SpringBoot在创建项目时，使用jar的打包方式。（所以在pom配置文件中没有配置打包格式）</li><li>SpringBoot的引导类，是项目入口，运行main方法就可以启动项目。</li><li>使用SpringBoot和Spring构建的项目，业务代码编写方式完全一样。</li></ul><h3 id="SpringBoot起步依赖原理分析"><a href="#SpringBoot起步依赖原理分析" class="headerlink" title="SpringBoot起步依赖原理分析"></a><strong>SpringBoot起步依赖原理分析</strong></h3><h5 id="小结-2"><a href="#小结-2" class="headerlink" title="小结"></a>小结</h5><ul><li>在spring-boot-start-parent中定义了各种技术的版本信息，组合了一套最优搭配的技术版本。</li><li>在各种starter中，定义了完成该功能需要的坐标合集，其中大部分版本信息来自于父工程。</li><li>我们的工程继承parent，引入start后，通过依赖传递，就可以简单方便获得需要的jar包，并且不会存在版本冲突问题。</li></ul><h3 id="SpringBoot配置"><a href="#SpringBoot配置" class="headerlink" title="SpringBoot配置"></a><strong>SpringBoot配置</strong></h3><h5 id="小结-3"><a href="#小结-3" class="headerlink" title="小结"></a>小结</h5><ul><li>SpringBoot提供了2种配置文件类型：properties和yml/yaml</li><li>默认配置文件名称：application</li><li>在同一级目录下优先级为：properties&gt;yml&gt;yaml</li></ul><h3 id="YAML-小结"><a href="#YAML-小结" class="headerlink" title="YAML:小结"></a><strong>YAML:小结</strong></h3><p>1）配置文件类型</p><ul><li>properties:和以前一样</li><li>yml/yaml:注意空格</li></ul><p>2）yaml:简洁，以数据为核心</p><ul><li>基本语法<ul><li>大小写敏感</li><li>数据值前边必须有空格，作为分隔符</li><li>使用空格缩进表示层级关系，相同缩进表示同一级</li></ul></li><li>数据格式<ul><li>对象</li><li>数组：使用“-”表示数组每个元素</li><li>纯量</li></ul></li><li>参数引用<ul><li>${key}</li></ul></li></ul><h3 id="profile-小结"><a href="#profile-小结" class="headerlink" title="profile-小结"></a><strong>profile-小结</strong></h3><p>1）profile是用来完成不同环境下，配置动态切换功能的。</p><p>2）profile配置方式</p><ul><li>多profile文件方式：提供多个配置方式，每个代表一种环境。<ul><li>application-dev.properties/yml开发环境</li><li>application-test.properties/yml测试环境</li><li>application-pro.properties/yml生产环境</li></ul></li><li>yml多文档方式：<ul><li>在yml中使用—-分割不同配置</li></ul></li></ul><p>3）profile激活方式</p><ul><li>配置文件：在配置文件中配置：spring.profiles.active=dev</li><li>虚拟机参数：在VM options指定：-Dspring.profiles.active=dev</li><li>命令行参数：Java-jar xxx.jar —-spring.profile.active=dev</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> springboot </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签4 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue文章</title>
+      <link href="/2023/12/05/vue/"/>
+      <url>/2023/12/05/vue/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签5 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>第一篇文章</title>
       <link href="/2023/11/28/2023-11-27%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-copy-2/"/>
       <url>/2023/11/28/2023-11-27%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-copy-2/</url>
@@ -17,12 +142,6 @@
           
       </categories>
       
-      
-        <tags>
-            
-            <tag> 标签1 </tag>
-            
-        </tags>
       
     </entry>
     
@@ -97,32 +216,6 @@
       <title>第一篇文章</title>
       <link href="/2023/11/27/2023-11-27%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-copy-3/"/>
       <url>/2023/11/27/2023-11-27%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-copy-3/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>第一篇文章</title>
-      <link href="/2023/11/27/2023-11-27%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-copy/"/>
-      <url>/2023/11/27/2023-11-27%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-copy/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>第一篇文章</title>
-      <link href="/2023/11/27/2023-11-27%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-      <url>/2023/11/27/2023-11-27%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
       
         <content type="html"><![CDATA[]]></content>
       
